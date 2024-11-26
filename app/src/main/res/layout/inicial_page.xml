@@ -13,12 +13,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Inclui o layout da tela de login -->
-    <include
-        layout="@layout/login_layout"
-        android:id="@+id/login_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
-
 </FrameLayout>

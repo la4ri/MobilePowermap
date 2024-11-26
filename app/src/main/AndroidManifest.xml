@@ -22,6 +22,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.example.mobilepowermap.Activities.InicialPageActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBzkj6tTXRHTkl8jfSLSYxcE9aAWgdKz4E" />

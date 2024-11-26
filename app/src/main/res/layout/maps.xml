@@ -6,19 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Inclui o layout do mapa -->
-    <include
-        layout="@layout/maps"
-        android:id="@+id/map_container"
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Inclui o layout da tela de login -->
-    <include
-        layout="@layout/login_layout"
-        android:id="@+id/login_layout"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>
