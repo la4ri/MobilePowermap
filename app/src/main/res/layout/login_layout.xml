@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="200dp"
     android:orientation="vertical"
     android:background="@drawable/login_teste"
-    android:padding="10dp"
+    android:padding="5dp"
     android:layout_gravity="center">
 
     <!-- Logo -->
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/powermap_logo" />
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/powermap_logo"
+        android:layout_marginBottom="10dp"/>
 
     <!-- Campo de Login -->
     <EditText
@@ -39,16 +42,17 @@
         android:layout_height="wrap_content"
         android:text="Esqueceu a senha?"
         android:textColor="@color/white"
-        android:layout_gravity="end"
-        android:layout_marginTop="8dp" />
+        android:layout_gravity="start"
+        android:layout_marginTop="15dp" />
 
     <!-- Botão Entrar -->
     <Button
         android:id="@+id/login_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="Entrar"
-        android:layout_marginTop="16dp" />
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
 
     <!-- Link para Cadastro -->
     <TextView
@@ -57,7 +61,7 @@
         android:layout_height="wrap_content"
         android:text="Cadastre-se"
         android:textColor="@color/white"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center" />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat >

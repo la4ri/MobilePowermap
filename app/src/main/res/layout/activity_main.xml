@@ -4,21 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:scaleType="centerCrop"
     tools:context=".MainActivity">
-
-    <!-- Inclui o layout do mapa -->
-    <include
-        layout="@layout/maps"
-        android:id="@+id/map_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
     <!-- Inclui o layout da tela de login -->
     <include
-        layout="@layout/login_layout"
         android:id="@+id/login_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        layout="@layout/login_layout"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
         android:layout_gravity="center" />
 
 </FrameLayout>
