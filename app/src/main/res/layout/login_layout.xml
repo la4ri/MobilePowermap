@@ -14,26 +14,50 @@
         android:layout_height="250dp"
         android:layout_gravity="center"
         android:src="@drawable/powermap_logo"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginTop="-30dp"/>
 
     <!-- Campo de Login -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"/>
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Login"
+        android:background="@drawable/edit_text_style"
+        android:hint="email@email.com"
         android:inputType="textEmailAddress"
-        android:drawablePadding="8dp"/>
+        android:padding="10dp"
+        android:textColorHint="#666666"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
 
     <!-- Campo de Senha -->
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Senha"
+        android:background="@drawable/edit_text_style"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:drawablePadding="8dp"
-        android:layout_marginTop="8dp" />
+        android:padding="10dp"
+        android:textColorHint="#666666"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
 
     <!-- Esqueci a senha -->
     <TextView
@@ -43,7 +67,8 @@
         android:text="Esqueceu a senha?"
         android:textColor="@color/white"
         android:layout_gravity="start"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
 
     <!-- Botão Entrar -->
     <Button
@@ -61,7 +86,7 @@
         android:layout_height="wrap_content"
         android:text="Cadastre-se"
         android:textColor="@color/white"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_gravity="center" />
 
-</androidx.appcompat.widget.LinearLayoutCompat >
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -50,8 +50,8 @@ public class InicialPageActivity extends AppCompatActivity implements OnMapReady
 
     private GoogleMap mMap;
     private TextView messageText;
-    private Button startButton; // Botão "Iniciar"
-    private ImageView logoutButton; // Botão de logout
+    private Button startButton;
+    private ImageView logoutButton, searchButton;
     private FusedLocationProviderClient fusedLocationClient;
     private ChargingStationRepository repository;
 
@@ -65,12 +65,13 @@ public class InicialPageActivity extends AppCompatActivity implements OnMapReady
 
         repository = new ChargingStationRepository();
 
-        // Inicialize a referência ao TextView e ao botão
+
         messageText = findViewById(R.id.message_text);
         startButton = findViewById(R.id.start_button);
         logoutButton = findViewById(R.id.button_logout);
+//        searchButton = findViewById(R.id.search_button);
 
-        // Configurar mensagem inicial
+
         messageText.setText("Selecione um terminal");
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -108,6 +109,12 @@ public class InicialPageActivity extends AppCompatActivity implements OnMapReady
             startActivity(intent);
             finish();
         });
+
+//        searchButton.setOnClickListener(v -> {
+//            Intent intent = new Intent(InicialPageActivity.this, SearchActivity.class);
+//            startActivity(intent);
+//            finish();
+//        });
     }
 
     private void renderAdminView() {

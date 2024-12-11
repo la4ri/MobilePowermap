@@ -1,5 +1,6 @@
 package com.example.mobilepowermap.Repositories;
 
+import com.example.mobilepowermap.Models.DTO.RegisterDTO;
 import com.example.mobilepowermap.Models.User;
 import com.example.mobilepowermap.APIs.UserAPI;
 import com.example.mobilepowermap.Utils.RetrofitClient;
@@ -14,8 +15,8 @@ public class UserRepository {
         this.apiService = RetrofitClient.getRetrofitInstance(null).create(UserAPI.class);
     }
 
-    public void registerUser(User user, Callback<User> callback) {
-        Call<User> call = apiService.registerUser(user);
+    public void registerUser(RegisterDTO registerDTO, Callback<Void> callback) {
+        Call<Void> call = apiService.registerUser(registerDTO);
         call.enqueue(callback);
     }
 

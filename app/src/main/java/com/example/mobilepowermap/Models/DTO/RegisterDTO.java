@@ -4,15 +4,19 @@ public class RegisterDTO {
     private String email;
     private String password;
     private String nome;
+    private String cpfCnpj;
     private String role;
 
-    public RegisterDTO(String email, String password, String nome, String role) {
+    // Construtor
+    public RegisterDTO(String email, String password, String nome, String cpfCnpj, String role) {
         this.email = email;
         this.password = password;
         this.nome = nome;
+        this.cpfCnpj = cpfCnpj;
         this.role = role;
     }
 
+    // Getters e Setters
     public String getEmail() {
         return email;
     }
@@ -35,6 +39,14 @@ public class RegisterDTO {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCpfCnpj() {
+        return cpfCnpj;
+    }
+
+    public void setCpfCnpj(String cpfCnpj) {
+        this.cpfCnpj = cpfCnpj;
     }
 
     public String getRole() {
